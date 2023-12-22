@@ -1,4 +1,5 @@
-import { Grid, Input, Typography } from "@mui/material";
+import { Grid, Input, Typography, Button } from "@mui/material";
+
 
 const UserForms = (props) => {
   return (
@@ -11,15 +12,15 @@ const UserForms = (props) => {
         display: "block"
       }}
     >
-      <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+      <Grid item xs={12} >
         <Typography component={"h1"} sx={{ color: "#000000" }}>
-          User
+          User APP
         </Typography>
 
-        <Grid item xs={12} sm={{display: 'flex'}}>
+        <Grid item xs={12} sm={6} sx={{display: 'flex'}}>
           <Typography
             component={"label"}
-            htmlfor="id"
+            htmlFor="id"
             sx={{
               color: "#000000",
               marginRight: "20px",
@@ -41,10 +42,10 @@ const UserForms = (props) => {
         </Grid>
 
 
-        <Grid item xs={12} sm={{display: 'flex'}}>
+        <Grid item xs={12} sm={6} sx={{display: 'flex'}}>
           <Typography
             component={"label"}
-            htmlfor="id"
+            htmlFor="id"
             sx={{
               color: "#000000",
               marginRight: "20px",
@@ -68,25 +69,21 @@ const UserForms = (props) => {
 
 
       </Grid>
-<button 
+<Button 
 sx={{
     margin:"auto",
-    color: "#000000",
-    backgroundColor: "#FFFFFF",
-    border: "1px solid #000000",
-    borderRadius: "5px",
-    padding: "10px 20px",
-    fontSize: "16px",
-    width: "100px",
-    display: "block",
+ marginBottom:"20px",
+ backgroundColor:"#00c6e6",
+ color:"#000000",
+ marginleft:"15px",
+ margintop:"2 0px",
     "&:hover":{
 opacity: "0.7",
 backgroundColor:"#00c6e6",
     }
 }}>
     Add
-</button>
-
+</Button>
 
     </Grid>
   );

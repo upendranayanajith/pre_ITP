@@ -1,11 +1,10 @@
 import UserForms from "./userforms";
 
 const Users = () => {
-    return ( 
-        <UserForms / >
-    );
+return(
+    <UserForms/>
+)
 
 }
 
 export default Users;
-
