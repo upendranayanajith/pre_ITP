@@ -1,13 +1,15 @@
 import { Grid, Input, Typography, Button } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
-const UserForms = (props) => {
+const UserForms = ({addUser, submitted }) => {
 
 const [id,setId] = useState(0);
 const[name,setName] = useState("");
 
-
+useEffect(() => {
+  
+})
 
   return (
     <Grid
@@ -88,7 +90,9 @@ sx={{
 opacity: "0.7",
 backgroundColor:"#00c6e6",
     }
-}}>
+}}
+onClick={() => addUser({id,name})}
+>
     Add
 </Button>
 
